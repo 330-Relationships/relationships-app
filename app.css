@@ -1,12 +1,12 @@
 
 
 .head-bar {
-  background-color: #2BBBAD;
+  background-color: #0d47a1;
   position: relative;
   color: white;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px white;
   height: 80px;
-  border: 2px solid #2BBBAD;
+  border: 2px solid #4285F4;
 }
 
 .app-title{
