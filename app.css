@@ -1,0 +1,69 @@
+
+
+.head-bar {
+  background-color: #e6ccff;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px black;
+  height: 80px;
+  border: 2px solid #8b49c9;
+}
+
+.app-title{
+  position: relative;
+  font-style: oblique;
+  font-size: 50px;
+  text-align: center;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.table {
+  width: 200px;
+}
+
+.card-body.text-info {
+  text-align: left;
+  padding-top: 0px;
+}
+.card-body.text-danger {
+  text-align: left;
+  padding-top: 0px;
+}
+.card-body.text-success {
+  text-align: left;
+  padding-top: 0px;
+}
+.card-body.text-primary {
+  text-align: left;
+  padding-top: 0px;
+}
+.card-body.text-dark {
+  text-align: left;
+  padding-top: 0px;
+}
+
+.left-person-info {
+  position: relative;
+  float: left;
+}
+
+.right-message{
+  position: relative;
+  float: right;
+  align: center;
+}
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+  font-size: 40px;
+ }
