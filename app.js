@@ -73,7 +73,7 @@
   #
   # Author: Lukasz Kokoszkiewicz
   #
-  # Copyright © w3widgets 2013 All Rights Reserved
+  # Copyright © w3widgets 2013 All Rights Reserved.
 */
 (function()
 {(function(c)
