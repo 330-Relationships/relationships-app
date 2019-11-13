@@ -24,7 +24,7 @@
 
   <div class="card text-left">
     <div class="card-header">
-      New Message to Sister
+      New Text Message to Mom
     </div>
     <div class="card-body text-primary">
         <div class="card-body">
@@ -32,7 +32,7 @@
               <div class="input-group mb-3">
                 <input type="text" class="form-control" value="Hey! When are you free to talk?">
                 <div class="input-group-append">
-                  <button href="#" class="btn btn-success" type="button">Send</button>
+                  <button href="#" class="btn btn-success" type="button" data-toggle="modal" data-target="#exampleModalCenter">Send</button>
                 </div>
               </div>
               <div class="input-group mb-3">
@@ -47,7 +47,7 @@
                   <option value="3">this weekend?</option>
                 </select>
                 <div class="input-group-append">
-                  <button class="btn btn-success" type="button">Send</button>
+                  <button class="btn btn-success" type="button" data-toggle="modal" data-target="#exampleModalCenter">Send</button>
                 </div>
               </div>
         </div>
@@ -61,7 +61,7 @@
               <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Custom message" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <button href="#" class="btn btn-success" type="button">Send</button>
+                  <button href="#" class="btn btn-success" type="button" data-toggle="modal" data-target="#exampleModalCenter">Send</button>
                 </div>
               </div>
             </div>
@@ -88,6 +88,21 @@
 </div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Text message sent!
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <!-- Optional JavaScript -->
