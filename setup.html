@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <link rel="stylesheet" type="text/css" href="app.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+  <div class="head-bar">
+    <p class="app-title"> What's Up</p>
+
+  </div>
+</header>
+<main id="content">
+  <div class="card text-left">
+    <div class="card-header">
+      Login Information
+    </div>
+    <div class="card-body text-primary">
+        <div class="card-body">
+              <!-- <h5 class="card-title"></h5> -->
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Email address*</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Password*</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+
+              <div class="form-group" id="password2Group">
+                  <label for="exampleInputPassword1">Re-Enter Password*</label>
+                  <input type="password" class="form-control" id="password2" placeholder="Password">
+              </div>
+        </div>
+    </div>
+  </div>
+  <div class="card text-left">
+    <div class="card-header">
+      Contact list
+    </div>
+    <div class="card-body text-primary" id="contacts">
+        <div class="card-body">
+          <button id="addContacts" type="button" class="btn btn-primary" data-toggle="modal" data-target="#newContactModal">
+            <i class="material-icons md-dark">person_add</i>
+            <p class="button-label">Add contacts</p>
+          </button>
+          <div id="contactList" style="display:none">
+            <table class="table table-sm">
+              <tbody>
+                <tr>
+                  <td>Mom</td>
+                  <td>
+                    <button id="addMomReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setMomValues()" data-toggle="modal" data-target="#reminderModal">
+                      <i class="material-icons md-dark">add_alarm</i>
+                      <p class="button-label">Add reminder</p>
+                    </button>
+                    <p id="momReminder"></p>
+                  </td>
+                  <td>
+                    <button id="editMomReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setMomValues()" data-toggle="modal" data-target="#reminderModal">
+                      <!-- <i class="material-icons md-dark">access_alarm</i> -->
+                      <p class="button-label">Edit</p>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Dad</td>
+                  <td>
+                    <button id="addDadReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setDadValues()" data-toggle="modal" data-target="#reminderModal">
+                      <i class="material-icons md-dark">add_alarm</i>
+                      <p class="button-label">Add reminder</p>
+                    </button>
+                    <p id="dadReminder"></p>
+                  </td>
+                  <td>
+                    <button id="editDadReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setDadValues()" data-toggle="modal" data-target="#reminderModal">
+                      <!-- <i class="material-icons md-dark">access_alarm</i> -->
+                      <p class="button-label">Edit</p>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Grandma</td>
+                  <td>
+                    <button id="addGrandmaReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setGrandmaValues()" data-toggle="modal" data-target="#reminderModal">
+                      <i class="material-icons md-dark">add_alarm</i>
+                      <p class="button-label">Add reminder</p>
+                    </button>
+                    <p id="grandmaReminder"></p>
+                  </td>
+                  <td>
+                    <button id="editGrandmaReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setGrandmaValues()" data-toggle="modal" data-target="#reminderModal">
+                      <!-- <i class="material-icons md-dark">access_alarm</i> -->
+                      <p class="button-label">Edit</p>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Grandpa</td>
+                  <td>
+                    <button id="addGrandpaReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setGrandpaValues()" data-toggle="modal" data-target="#reminderModal">
+                      <i class="material-icons md-dark">add_alarm</i>
+                      <p class="button-label">Add reminder</p>
+                    </button>
+                    <p id="grandpaReminder"></p>
+                  </td>
+                  <td>
+                    <button id="editGrandpaReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setGrandpaValues()" data-toggle="modal" data-target="#reminderModal">
+                      <!-- <i class="material-icons md-dark">access_alarm</i> -->
+                      <p class="button-label">Edit</p>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sister</td>
+                  <td>
+                    <button id="addSisterReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setSisterValues()" data-toggle="modal" data-target="#reminderModal">
+                      <i class="material-icons md-dark">add_alarm</i>
+                      <p class="button-label">Add reminder</p>
+                    </button>
+                    <p id="sisterReminder"></p>
+                  </td>
+                  <td>
+                    <button id="editSisterReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setSisterValues()" data-toggle="modal" data-target="#reminderModal">
+                      <!-- <i class="material-icons md-dark">access_alarm</i> -->
+                      <p class="button-label">Edit</p>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+
+  <div class="card text-left">
+    <div class="bottom-bar">
+      <div class="card text-center cardprimary">
+        <a class="btn btn-primary" href="homepage.html" role="button">Save User</a>
+      </div>
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th class= table-el scope="col">
+              <button type="button" class="btn">
+                <a href="homepage.html" role="return to contacts list">
+                <i class="material-icons md-dark">home</i>
+              </button>
+            </th>
+            <th class= table-el scope="col"><button type="button" class="btn"><i class="material-icons md-dark md-inactive">date_range</i></button></th>
+            <th class= table-el scope="col"><button type="button" class="btn"><i class="material-icons md-dark md-inactive">people_outline</i></button></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="newContactModal" tabindex="-1" role="dialog" aria-labelledby="newContactModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Add contact</h6>
+        <button class="modal-button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-outline-primary">
+            Create
+          </button>
+          <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#importModal">
+            Import
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="importModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Import</h6>
+        <button class="modal-button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-sm">
+          <tbody>
+            <tr>
+              <td>Mom</td>
+              <td>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="check1"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Dad</td>
+              <td>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="dadCheck"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Grandma</td>
+              <td>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="grandmaCheck"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Grandpa</td>
+              <td>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="grandpaCheck"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Sister</td>
+              <td>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="sisterCheck"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" onclick="addToContacts()">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="reminderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Edit Reminder</h6>
+        <button class="modal-button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <p>Remind me if I haven't talked to this contact in ...</p>
+          <select class="custom-select" id="select1">
+            <option selected>Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <select class="custom-select" id="select2">
+            <option selected>Select</option>
+            <option value="day(s)">day(s)</option>
+            <option value="week(s)">week(s)</option>
+            <option value="month(s)">month(s)</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" onclick="addReminder()">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
