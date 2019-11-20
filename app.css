@@ -23,11 +23,111 @@
   width: 100%;
 }
 
+.modal-title {
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.modal-body {
+  margin: 0 auto;
+}
+
+.modal-footer {
+  margin: 0 auto;
+}
+
+.material-icons {
+  display: inline;
+  float: left;
+  padding-right: 10px;
+  font-size = 30px;
+  overflow-y: hidden;
+}
+
+.button-label {
+  padding-top: 10px;
+  float: left;
+}
+
+#content {
+  height: 520px;
+  overflow-y: scroll;
+}
+
+#password2Group {
+  margin-bottom: 0px;
+}
+
+#addContacts {
+  float: left;
+  padding-top: 10px;
+}
+
+#momReminder {
+  display: none;
+}
+
+#editMomReminder {
+  display: none;
+}
+
+#addMomReminder {
+  display: inline;
+}
+
+#dadReminder {
+  display: none;
+}
+
+#editDadReminder {
+  display: none;
+}
+
+#addDadReminder {
+  display: inline;
+}
+
+#grandmaReminder {
+  display: none;
+}
+
+#editGrandmaReminder {
+  display: none;
+}
+
+#addGrandmaReminder {
+  display: inline;
+}
+
+#grandpaReminder {
+  display: none;
+}
+
+#editGrandpaReminder {
+  display: none;
+}
+
+#addGrandpaReminder {
+  display: inline;
+}
+
+#sisterReminder {
+  display: none;
+}
+
+#editSisterReminder {
+  display: none;
+}
+
+#addSisterReminder {
+  display: inline;
+}
+
 #table{
   margin-bottom: 0px;
 }
 
-.card-container{
+.card-container {
   height: 575px;
   overflow: scroll;
 }
