@@ -275,10 +275,12 @@ function addReminder() {
 
   function showLabel() {
     document.getElementById("label").style.display = "inline-block";
+    document.getElementById("label20").style.display = "none";
   }
 
   function showLabel20(){
     document.getElementById("label20").style.display = "inline-block";
+    document.getElementById("label").style.display = "none";
   }
 
   function hideLabel() {
