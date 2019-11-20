@@ -24,52 +24,52 @@
 <main id="content">
   <div class="card text-left">
     <div class="card-header">
-      Login Information
+      Step 1: Login Information
     </div>
     <div class="card-body text-primary">
         <div class="card-body">
               <!-- <h5 class="card-title"></h5> -->
               <div class="form-group">
                   <label for="exampleInputEmail1">Email address*</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" aria-label="enter email address here">
               </div>
 
               <div class="form-group">
                   <label for="exampleInputPassword1">Password*</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" aria-label="enter password here">
               </div>
 
               <div class="form-group" id="password2Group">
                   <label for="exampleInputPassword1">Re-Enter Password*</label>
-                  <input type="password" class="form-control" id="password2" placeholder="Password">
+                  <input type="password" class="form-control" id="password2" placeholder="Password" aria-label="re-enter password here">
               </div>
         </div>
     </div>
   </div>
   <div class="card text-left">
     <div class="card-header">
-      Contact list
+      Step 2: Import Contacts
     </div>
-    <div class="card-body text-primary" id="contacts">
+    <div class="card-body text-primary" id="contacts" aria-label="Contacts list">
         <div class="card-body">
-          <button id="addContacts" type="button" class="btn btn-primary" data-toggle="modal" data-target="#newContactModal">
+          <button id="addContacts" type="button" class="btn btn-primary" data-toggle="modal" data-target="#newContactModal" aria-label="add contacts">
             <i class="material-icons md-dark">person_add</i>
             <p class="button-label">Add contacts</p>
           </button>
-          <div id="contactList" style="display:none">
+          <div id="contactList" style="display:none" aria-label="Imported contacts">
             <table class="table table-sm">
               <tbody>
                 <tr>
                   <td>Mom</td>
                   <td>
-                    <button id="addMomReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setMomValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="addMomReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setMomValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for mom">
                       <i class="material-icons md-dark">add_alarm</i>
                       <p class="button-label">Add reminder</p>
                     </button>
                     <p id="momReminder"></p>
                   </td>
                   <td>
-                    <button id="editMomReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setMomValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="editMomReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setMomValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for mom">
                       <!-- <i class="material-icons md-dark">access_alarm</i> -->
                       <p class="button-label">Edit</p>
                     </button>
@@ -78,14 +78,14 @@
                 <tr>
                   <td>Dad</td>
                   <td>
-                    <button id="addDadReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setDadValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="addDadReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setDadValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for dad">
                       <i class="material-icons md-dark">add_alarm</i>
                       <p class="button-label">Add reminder</p>
                     </button>
                     <p id="dadReminder"></p>
                   </td>
                   <td>
-                    <button id="editDadReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setDadValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="editDadReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setDadValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for dad">
                       <!-- <i class="material-icons md-dark">access_alarm</i> -->
                       <p class="button-label">Edit</p>
                     </button>
@@ -94,14 +94,14 @@
                 <tr>
                   <td>Grandma</td>
                   <td>
-                    <button id="addGrandmaReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setGrandmaValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="addGrandmaReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setGrandmaValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for grandma">
                       <i class="material-icons md-dark">add_alarm</i>
                       <p class="button-label">Add reminder</p>
                     </button>
                     <p id="grandmaReminder"></p>
                   </td>
                   <td>
-                    <button id="editGrandmaReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setGrandmaValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="editGrandmaReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setGrandmaValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for grandma">
                       <!-- <i class="material-icons md-dark">access_alarm</i> -->
                       <p class="button-label">Edit</p>
                     </button>
@@ -110,14 +110,14 @@
                 <tr>
                   <td>Grandpa</td>
                   <td>
-                    <button id="addGrandpaReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setGrandpaValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="addGrandpaReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setGrandpaValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for grandpa">
                       <i class="material-icons md-dark">add_alarm</i>
                       <p class="button-label">Add reminder</p>
                     </button>
                     <p id="grandpaReminder"></p>
                   </td>
                   <td>
-                    <button id="editGrandpaReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setGrandpaValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="editGrandpaReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setGrandpaValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for grandpa">
                       <!-- <i class="material-icons md-dark">access_alarm</i> -->
                       <p class="button-label">Edit</p>
                     </button>
@@ -126,14 +126,14 @@
                 <tr>
                   <td>Sister</td>
                   <td>
-                    <button id="addSisterReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setSisterValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="addSisterReminder" type="button" class="btn btn-sm btn-outline-primary" onclick="setSisterValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for sister">
                       <i class="material-icons md-dark">add_alarm</i>
                       <p class="button-label">Add reminder</p>
                     </button>
                     <p id="sisterReminder"></p>
                   </td>
                   <td>
-                    <button id="editSisterReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setSisterValues()" data-toggle="modal" data-target="#reminderModal">
+                    <button id="editSisterReminder" type="button" class="btn btn-sm btn-outline-primary edit-reminder" onclick="setSisterValues()" data-toggle="modal" data-target="#reminderModal" aria-label="open reminder editor for sister">
                       <!-- <i class="material-icons md-dark">access_alarm</i> -->
                       <p class="button-label">Edit</p>
                     </button>
@@ -153,19 +153,26 @@
   <div class="card text-left">
     <div class="bottom-bar">
       <div class="card text-center cardprimary">
-        <a class="btn btn-primary" href="homepage.html" role="button">Save User</a>
+        <a class="btn btn-primary" href="homepage.html" role="button" aria-label="save user profile">Step 3: Save User</a>
       </div>
       <table class="table table-bordered">
         <thead class="thead-light">
           <tr>
             <th class= table-el scope="col">
               <button type="button" class="btn">
-                <a href="homepage.html" role="return to contacts list">
-                <i class="material-icons md-dark">home</i>
+                <i class="material-icons md-inactive" aria-label="to access the home page, first save user profile">home</i>
               </button>
             </th>
-            <th class= table-el scope="col"><button type="button" class="btn"><i class="material-icons md-dark md-inactive">date_range</i></button></th>
-            <th class= table-el scope="col"><button type="button" class="btn"><i class="material-icons md-dark md-inactive">people_outline</i></button></th>
+            <th class= table-el scope="col">
+              <button type="button" class="btn">
+                <i class="material-icons md-dark md-inactive" aria-label="to access the score card, first save user profile">date_range</i>
+              </button>
+            </th>
+            <th class= table-el scope="col">
+              <button type="button" class="btn">
+                <i class="material-icons md-dark md-inactive" aria-label="to access the account settings page, first save user profile">people_outline</i>
+              </button>
+            </th>
           </tr>
         </thead>
       </table>
