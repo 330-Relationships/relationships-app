@@ -1,3 +1,4 @@
+
 // var daysContacted = { 1: { personContacted: "Mom"
 //                            message: "Hey mom, can you talk?"
 //                            contactMethod: "called"
@@ -15,7 +16,76 @@
 //                     }
 //}
 
+var textID
+var addbuttonID
+
+function addToContacts() {
+  // Get the checkbox
+  var checkBox = document.getElementById("check1");
+  // Get the output text
+  var text = document.getElementById("contactList");
+
+  var addbutton = document.getElementById("addContacts");
+  // var nextbutton = document.getElementById("next");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+    // nextbutton.style.display = "block";
+    addbutton.style.display = "none";
+  } else {
+    text.style.display = "none";
+    addbutton.style.display = "block";
+  }
+}
+
+function setMomValues() {
+  textID = "momReminder"
+  addbuttonID = "addMomReminder"
+  editbuttonID = "editMomReminder"
+}
+
+function setDadValues() {
+  textID = "dadReminder"
+  addbuttonID = "addDadReminder"
+  editbuttonID = "editDadReminder"
+}
+
+function setGrandmaValues() {
+  textID = "grandmaReminder"
+  addbuttonID = "addGrandmaReminder"
+  editbuttonID = "editGrandmaReminder"
+}
+
+function setGrandpaValues() {
+  textID = "grandpaReminder"
+  addbuttonID = "addGrandpaReminder"
+  editbuttonID = "editGrandpaReminder"
+}
+
+function setSisterValues() {
+  textID = "sisterReminder"
+  addbuttonID = "addSisterReminder"
+  editbuttonID = "editSisterReminder"
+}
+
+function addReminder() {
+  // Get the output text
+  var text = document.getElementById(textID);
+  var addbutton = document.getElementById(addbuttonID);
+  var editbutton = document.getElementById(editbuttonID);
+  val1 = document.getElementById("select1").value;
+  val2 = document.getElementById("select2").value;
+
+  addbutton.style.display = "none";
+  text.innerHTML = ("Every " + val1 + " " + val2);
+  text.style.display = "block";
+  editbutton.style.display = "block";
+
+}
+
 (function($) {
+
   /**
    *	Fade Placeholder
    */
