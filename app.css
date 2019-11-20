@@ -23,12 +23,44 @@
   width: 100%;
 }
 
+.container2{
+  position: relative;
+  width: 375px;
+  text-align: center;
+  border: 2px solid darkblue;
+  margin: 18px;
+  height: 140px;
+}
+
+#title{
+  position: fixed;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 7px;
+}
+
+#label{
+  margin-top: 5.5px;
+  margin-left: 70px;
+  text-align: left;
+  display: none;
+}
+
+#label20{
+  margin-top: 5.5px;
+  margin-left: 70px;
+  text-align: left;
+  display: none;
+}
+
 #table{
   margin-bottom: 0px;
+
 }
 
 .card-container{
-  height: 575px;
+  height: 570px;
   overflow: scroll;
 }
 
@@ -82,6 +114,16 @@
   color: rgba(0, 0, 0, 0.26);
   font-size: 40px;
  }
+
+  #day1{
+     background-color: lightblue !important;
+ }
+
+ #day20{
+   background-color: lightblue !important;
+ }
+
+
 
  /*------------------------------------------------------------------
 [Calender]*/
