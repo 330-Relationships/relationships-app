@@ -1,21 +1,3 @@
-
-// var daysContacted = { 1: { personContacted: "Mom"
-//                            message: "Hey mom, can you talk?"
-//                            contactMethod: "called"
-//                            duration: 50;}
-//                       20: { personContacted: "Grandpa"
-//                             message: "Hey Grandpa!"
-//                             contactMethod: "Facetimed"
-//                             duration: 25;
-//                           }
-//                       25: { personContacted: "Sister"
-//                             message: "Hey, wanna talk?"
-//                             contactMethod: "called"
-//                             duration: 30;
-//                           }
-//                     }
-//}
-
 // START CARINA STUFF //
 var password = document.getElementById("inputPassword")
   , confirm_password = document.getElementById("confirmPassword");
