@@ -157,10 +157,9 @@ function addReminder() {
     var $cal = $('.responsive-calendar');
     $cal.responsiveCalendar({
       events : {
-        "2017-02-14" : {
+        "2014-02-14" : {
           "number" : 2,
           "badgeClass" : "badge-success",
-          "url" : "https://codepen.io/alenabdula/pen/OPEpGL",
           "dayEvents" : [
             {
               "title" : "Help friend developer",
@@ -172,6 +171,10 @@ function addReminder() {
               "status" : "Chill",
               "time" : "10:45PM"
             }
+            // "2019-11-25" : {
+            //   "title" : "hello"
+            // }
+            //}
           ]
         },
       }, /* end events */
@@ -279,6 +282,9 @@ function addReminder() {
         else if(f===20){
           l.append(c("<a onclick='showLabel20()'>"+f+"</a>").attr("id", "day"+f).attr("data-day",f).attr("data-month",j).attr("data-year",p));
         }
+         else if(f===23){
+         l.append(c("<a onclick='showLabel23()'>"+f+"</a>").attr("id", "day"+f).attr("data-day",f).attr("data-month",j).attr("data-year",p));
+         }
         else{
             l.append(c("<a onclick='hideLabel()'>"+f+"</a>").attr("id", "day"+f).attr("data-day",f).attr("data-month",j).attr("data-year",p));
         }
@@ -323,14 +329,44 @@ function addReminder() {
   function showLabel() {
     document.getElementById("label").style.display = "inline-block";
     document.getElementById("label20").style.display = "none";
+    document.getElementById("label23").style.display = "none";
   }
 
   function showLabel20(){
     document.getElementById("label20").style.display = "inline-block";
     document.getElementById("label").style.display = "none";
+    document.getElementById("label23").style.display = "none";
+  }
+
+  function showLabel23(){
+    if(localStorage.getItem('dateColored'))
+    {
+      document.getElementById("label23").style.display = "inline-block";
+      document.getElementById("label").style.display = "none";
+      document.getElementById("label20").style.display = "none";
+    }
   }
 
   function hideLabel() {
     document.getElementById("label").style.display = "none";
     document.getElementById("label20").style.display = "none";
+    document.getElementById("label23").style.display = "none";
+  }
+
+  function colorDay() {
+    //console.log('colorDay');
+    localStorage.setItem('dateColored', true)
+    //console.log(localStorage.getItem('dateColored'));
+  }
+
+  function changeColor() {
+    //console.log(localStorage.getItem('dateColored'));
+    if (localStorage.getItem('dateColored')) {
+    //  console.log('color')
+      document.getElementById('day23').style.background = 'lightblue';
+      // document.getElementById("label23").style.display = "inline-block";
+      // document.getElementById("label").style.display = "none";
+      // document.getElementById("label20").style.display = "none";
+
+    }
   }

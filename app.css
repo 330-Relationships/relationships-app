@@ -70,6 +70,13 @@
   display: none;
 }
 
+#label23{
+  margin-top: 5.5px;
+  margin-left: 70px;
+  text-align: left;
+  display: none;
+}
+
 =======
 
 .modal-title {
@@ -278,10 +285,14 @@
  }
 
 
-
  /*------------------------------------------------------------------
 [Calender]*/
 
+ .todaysDate{
+   text-align: left;
+   padding: 7px;
+   padding-top: 10px;
+ }
  .icon-chevron {
   display:block;
   width:15px;
@@ -294,8 +305,6 @@
 .page {
   width: 370px;
   margin: 0 auto;
-  padding-left: 0px;
-  padding-top: 40px;
 }
 .responsive-calendar-placeholder {}
 .responsive-calendar-modal {
@@ -406,6 +415,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: lightblue;
 }
 
 .wrap-loginbutton{
