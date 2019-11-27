@@ -10,8 +10,8 @@ function validatePassword(){
   }
 }
 
-// password.onchange = validatePassword;
-// confirm_password.onkeyup = validatePassword;
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
 
 
 function login(){
@@ -20,13 +20,13 @@ function login(){
 
   console.log(login_email.value)
   console.log(login_password.value)
-  console.log(((login_email.value == "a@a.com") && (login_password.value == "a")))
+
   if((login_email.value == "a@a.com") && (login_password.value == "a")) {
     console.log('login a@a.com')
     login_email.setCustomValidity('');
 
-  } else if ((login_password.value == "b@b.com") && (login_password.value == "b")) {
-    console.log('login user2@gmail.com')
+  } else if ((login_email.value == "b@b.com") && (login_password.value == "b")) {
+    console.log('login b@b.com')
     login_email.setCustomValidity('');
 
   } else {
