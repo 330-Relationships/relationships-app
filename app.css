@@ -508,7 +508,7 @@
 .form-style-2-heading{
  font-weight: bold;
  border-bottom: 2px solid #ddd;
- margin-bottom: 20px;
+ margin-bottom: 10px;
  font-size: 25px;
  padding-bottom: 3px;
 }
@@ -517,10 +517,10 @@
  margin: 0px 0px 15px 0px;
 }
 .form-style-2 label > span{
- width: 100px;
+ width: 95%;
  font-weight: bold;
  float: left;
- padding-top: 8px;
+ padding-top: 4px;
  padding-right: 5px;
 }
 .form-style-reminder{
@@ -534,9 +534,12 @@
  width: 60px;
  text-align: center;
 }
-.form-style-2 input.input-field, .form-style-2 .select-field{
- width: 70%;
+.form-style-2 input.input-field, input.form-control-plaintext, .form-style-2 .select-field{
+ width: 100%;
+ box-sizing: border-box;
+ border-bottom: 1px solid #ddd;
 }
+
 .form-style-2 input.input-field,
 .form-style-2 .tel-number-field,
 .form-style-2 .textarea-field,
@@ -553,6 +556,7 @@
  -moz-border-radius: 3px;
  padding: 7px;
  outline: none;
+ margin-top: 10px;
 }
 .form-style-2 .input-field:focus,
 .form-style-2 .tel-number-field:focus,
@@ -583,4 +587,35 @@
 .form-style-2 input[type=button]:hover{
  background: #0d47a1;
  color: #fff;
+}
+
+.profile-image{
+  display: block;
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: 110px;
+  margin-right: auto;
+}
+.form-style-2 button.editbutton{
+ color:#0d47a1;
+ position: relative;
+ float: right;
+ text-align: right;
+ font-weight: bold;
+}
+
+.form-style-2 span.selectfield{
+ margin-bottom: 20px;
+}
+
+
+.profile-container{
+  border-bottom: 1px solid #ddd;
+}
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;
 }

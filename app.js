@@ -128,6 +128,35 @@ function addReminder() {
 
 // END CARINA STUFF //
 
+// END Chabely STUFF //
+
+/**
+ *	Profile Page
+ */
+
+var momReminderProfile = "Every Week";
+
+function setMomValuesProfile() {
+  textID = "momReminderProfile"
+  addbuttonID = "addMomReminderProfile"
+  editbuttonID = "editMomReminder"
+}
+
+function addReminderProfile() {
+  // Get the output text
+  var text = document.getElementById(textID);
+  var addbutton = document.getElementById(addbuttonID);
+  var editbutton = document.getElementById(editbuttonID);
+  val1 = document.getElementById("select1").value;
+  val2 = document.getElementById("select2").value;
+
+  text.innerHTML = ("Every " + val1 + " " + val2);
+  text.style.display = "block";
+  editbutton.style.display = "block";
+}
+
+// END Chabely STUFF //
+
 
 // START KELLY STUFF //
 
