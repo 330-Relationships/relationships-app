@@ -16,8 +16,49 @@
 //                     }
 //}
 
+// START CARINA STUFF //
+var password = document.getElementById("inputPassword")
+  , confirm_password = document.getElementById("confirmPassword");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+// password.onchange = validatePassword;
+// confirm_password.onkeyup = validatePassword;
+
+
+function login(){
+  var login_email = document.getElementById("loginEmail");
+  var login_password = document.getElementById("loginPassword");
+
+  console.log(login_email.value)
+  console.log(login_password.value)
+  console.log(((login_email.value == "a@a.com") && (login_password.value == "a")))
+  if((login_email.value == "a@a.com") && (login_password.value == "a")) {
+    console.log('login a@a.com')
+    login_email.setCustomValidity('');
+
+  } else if ((login_password.value == "b@b.com") && (login_password.value == "b")) {
+    console.log('login user2@gmail.com')
+    login_email.setCustomValidity('');
+
+  } else {
+    login_email.setCustomValidity("Invalid credentials.");
+  }
+}
+
 var textID
 var addbuttonID
+var momReminder
+var dadReminder
+var grandmaReminder
+var grandpaReminder
+var sisterReminder
 
 function addToContacts() {
   // Get the checkbox
@@ -78,11 +119,16 @@ function addReminder() {
   val2 = document.getElementById("select2").value;
 
   addbutton.style.display = "none";
+  momReminder = ("Every " + val1 + " " + val2);
   text.innerHTML = ("Every " + val1 + " " + val2);
   text.style.display = "block";
   editbutton.style.display = "block";
 
 }
+
+// END CARINA STUFF //
+
+// END Chabely STUFF //
 
 /**
  *	Profile Page
@@ -109,7 +155,10 @@ function addReminderProfile() {
   editbutton.style.display = "block";
 }
 
+// END Chabely STUFF //
 
+
+// START KELLY STUFF //
 
 (function($) {
 
@@ -137,10 +186,9 @@ function addReminderProfile() {
     var $cal = $('.responsive-calendar');
     $cal.responsiveCalendar({
       events : {
-        "2017-02-14" : {
+        "2014-02-14" : {
           "number" : 2,
           "badgeClass" : "badge-success",
-          "url" : "https://codepen.io/alenabdula/pen/OPEpGL",
           "dayEvents" : [
             {
               "title" : "Help friend developer",
@@ -152,6 +200,10 @@ function addReminderProfile() {
               "status" : "Chill",
               "time" : "10:45PM"
             }
+            // "2019-11-25" : {
+            //   "title" : "hello"
+            // }
+            //}
           ]
         },
       }, /* end events */
@@ -259,6 +311,9 @@ function addReminderProfile() {
         else if(f===20){
           l.append(c("<a onclick='showLabel20()'>"+f+"</a>").attr("id", "day"+f).attr("data-day",f).attr("data-month",j).attr("data-year",p));
         }
+         else if(f===23){
+         l.append(c("<a onclick='showLabel23()'>"+f+"</a>").attr("id", "day"+f).attr("data-day",f).attr("data-month",j).attr("data-year",p));
+         }
         else{
             l.append(c("<a onclick='hideLabel()'>"+f+"</a>").attr("id", "day"+f).attr("data-day",f).attr("data-month",j).attr("data-year",p));
         }
@@ -303,14 +358,44 @@ function addReminderProfile() {
   function showLabel() {
     document.getElementById("label").style.display = "inline-block";
     document.getElementById("label20").style.display = "none";
+    document.getElementById("label23").style.display = "none";
   }
 
   function showLabel20(){
     document.getElementById("label20").style.display = "inline-block";
     document.getElementById("label").style.display = "none";
+    document.getElementById("label23").style.display = "none";
+  }
+
+  function showLabel23(){
+    if(localStorage.getItem('dateColored'))
+    {
+      document.getElementById("label23").style.display = "inline-block";
+      document.getElementById("label").style.display = "none";
+      document.getElementById("label20").style.display = "none";
+    }
   }
 
   function hideLabel() {
     document.getElementById("label").style.display = "none";
     document.getElementById("label20").style.display = "none";
+    document.getElementById("label23").style.display = "none";
+  }
+
+  function colorDay() {
+    //console.log('colorDay');
+    localStorage.setItem('dateColored', true)
+    //console.log(localStorage.getItem('dateColored'));
+  }
+
+  function changeColor() {
+    //console.log(localStorage.getItem('dateColored'));
+    if (localStorage.getItem('dateColored')) {
+    //  console.log('color')
+      document.getElementById('day23').style.background = 'lightblue';
+      // document.getElementById("label23").style.display = "inline-block";
+      // document.getElementById("label").style.display = "none";
+      // document.getElementById("label20").style.display = "none";
+
+    }
   }
