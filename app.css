@@ -1,17 +1,33 @@
 .head-bar {
-  background-color: #0d47a1;
+  background-color: #F5F5F5;
   position: relative;
-  color: white;
-  text-shadow: 1px 1px white;
+  color: #0867fb;
+  text-shadow: 2px 2px white;
   height: 80px;
-  border: 2px solid #4285F4;
+  border: 1px solid #D3D3D3;
+  /* border-radius: 5px; */
 }
 
 .app-title{
   position: relative;
   font-style: oblique;
   font-size: 50px;
+  font-weight: bold;
   text-align: center;
+}
+
+.app-title.login-title{
+  color: #0867fb;
+  text-shadow: 2px 2px #BEBEBE;
+  padding-bottom: 18px;
+}
+
+.loginbutton {
+  width: 250px;
+}
+
+.txt1.text-center {
+  padding-top: 20px;
 }
 
 .bottom-bar {
@@ -73,17 +89,19 @@
   display: inline;
   float: left;
   padding-right: 10px;
-  font-size = 30px;
+  font-size = 30;
   overflow-y: hidden;
+  vertical-align: middle;
 }
 
 .button-label {
   padding-top: 10px;
+  text-align: center;
   float: left;
 }
 
 #content {
-  height: 620px;
+  height: 590px;
   overflow-y: scroll;
 }
 
@@ -91,9 +109,20 @@
   margin-bottom: 0px;
 }
 
+#contacts {
+  text-align: center;
+}
+
 #addContacts {
-  float: left;
-  padding-top: 10px;
+  /* text-align: center; */
+  width: 330px;
+  border-radius: 30px;
+  /* align-items: center; */
+}
+
+#personAdd {
+  text-align: center;
+  vertical-align: middle;
 }
 
 #momReminder {
@@ -106,6 +135,7 @@
 
 #addMomReminder {
   display: inline;
+  width: 160px;
 }
 
 #dadReminder {
@@ -118,6 +148,7 @@
 
 #addDadReminder {
   display: inline;
+  width: 160px;
 }
 
 #grandmaReminder {
@@ -130,6 +161,7 @@
 
 #addGrandmaReminder {
   display: inline;
+  width: 160px;
 }
 
 #grandpaReminder {
@@ -142,6 +174,7 @@
 
 #addGrandpaReminder {
   display: inline;
+  width: 160px;
 }
 
 #sisterReminder {
@@ -154,12 +187,23 @@
 
 #addSisterReminder {
   display: inline;
+  width: 160px;
+}
+
+#contactListTable{
+  margin-bottom: 0px;
+  text-align: left;
+  width: 300px;
 }
 
 #table{
   margin-bottom: 0px;
-
 }
+
+#saveButton{
+  height: 64px;
+}
+.wrap-loginbutton {}
 
 /* -----------HOMEPAGE ---------------*/
 
@@ -214,6 +258,7 @@
   color: rgba(0, 0, 0, 0.7);
   font-size: 40px;
 }
+
 .material-icons.edit {
   color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
@@ -350,11 +395,11 @@
 
 .login-form-title {
   display: block;
-  font-size: 39px;
+  font-size: 35px;
   color: #333333;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 49px;
+  /* font-style: oblique; */
 }
 
 .container-loginbutton{

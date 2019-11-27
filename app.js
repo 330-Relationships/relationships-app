@@ -16,8 +16,49 @@
 //                     }
 //}
 
+// START CARINA STUFF //
+var password = document.getElementById("inputPassword")
+  , confirm_password = document.getElementById("confirmPassword");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+// password.onchange = validatePassword;
+// confirm_password.onkeyup = validatePassword;
+
+
+function login(){
+  var login_email = document.getElementById("loginEmail");
+  var login_password = document.getElementById("loginPassword");
+
+  console.log(login_email.value)
+  console.log(login_password.value)
+  console.log(((login_email.value == "a@a.com") && (login_password.value == "a")))
+  if((login_email.value == "a@a.com") && (login_password.value == "a")) {
+    console.log('login a@a.com')
+    login_email.setCustomValidity('');
+
+  } else if ((login_password.value == "b@b.com") && (login_password.value == "b")) {
+    console.log('login user2@gmail.com')
+    login_email.setCustomValidity('');
+
+  } else {
+    login_email.setCustomValidity("Invalid credentials.");
+  }
+}
+
 var textID
 var addbuttonID
+var momReminder
+var dadReminder
+var grandmaReminder
+var grandpaReminder
+var sisterReminder
 
 function addToContacts() {
   // Get the checkbox
@@ -78,11 +119,17 @@ function addReminder() {
   val2 = document.getElementById("select2").value;
 
   addbutton.style.display = "none";
+  momReminder = ("Every " + val1 + " " + val2);
   text.innerHTML = ("Every " + val1 + " " + val2);
   text.style.display = "block";
   editbutton.style.display = "block";
 
 }
+
+// END CARINA STUFF //
+
+
+// START KELLY STUFF //
 
 (function($) {
 
