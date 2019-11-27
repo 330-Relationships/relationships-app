@@ -1,10 +1,10 @@
 .head-bar {
-  background-color: #F5F5F5;
+  background-color: #1686E3;
   position: relative;
-  color: #0867fb;
-  text-shadow: 2px 2px white;
+  color: white;
+  text-shadow: 2px 2px #2C3E50;
   height: 80px;
-  border: 1px solid #D3D3D3;
+  border: 1px solid #2C3E50;
   /* border-radius: 5px; */
 }
 
