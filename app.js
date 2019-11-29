@@ -1,8 +1,10 @@
 // START CARINA STUFF //
-var password = document.getElementById("inputPassword")
-  , confirm_password = document.getElementById("confirmPassword");
+
 
 function validatePassword(){
+  var password = document.getElementById("inputPassword")
+    , confirm_password = document.getElementById("confirmPassword");
+
   if(password.value != confirm_password.value) {
     confirm_password.setCustomValidity("Passwords Don't Match");
   } else {
