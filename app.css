@@ -214,7 +214,11 @@
 #saveButton{
   height: 64px;
 }
-.wrap-loginbutton {}
+
+#closeMsgModal {
+  margin-right: 25px;
+  margin-top: 15px;
+}
 
 /* -----------HOMEPAGE ---------------*/
 
