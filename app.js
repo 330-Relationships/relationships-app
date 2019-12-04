@@ -376,7 +376,7 @@ function addReminderProfile() {
     //console.log(localStorage.getItem('dateColored'));
     if (localStorage.getItem('dateColored')) {
     //  console.log('color')
-      document.getElementById('day23').style.background = 'lightblue';
+      document.getElementById('day23').style.background = '#acc5ff';
       // document.getElementById("label23").style.display = "inline-block";
       // document.getElementById("label").style.display = "none";
       // document.getElementById("label20").style.display = "none";

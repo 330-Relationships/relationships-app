@@ -48,7 +48,7 @@
   position: relative;
   width: 375px;
   text-align: center;
-  border: 2px solid darkblue;
+  border: 2px solid #3b3f45;
   margin: 18px;
   height: 140px;
 }
@@ -294,11 +294,11 @@
  }
 
   #day1{
-     background-color: lightblue !important;
+     background-color: #acc5ff !important;
  }
 
  #day20{
-   background-color: lightblue !important;
+   background-color: #acc5ff !important;
  }
 
 
