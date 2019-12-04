@@ -222,6 +222,10 @@
 
 /* -----------HOMEPAGE ---------------*/
 
+.card-text {
+  font-size: 14px;
+}
+
 .card-container {
   height: 575px;
   overflow: scroll;
