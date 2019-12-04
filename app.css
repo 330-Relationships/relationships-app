@@ -1,24 +1,25 @@
 .head-bar {
-  background-color: #0867fb;
+  background-color: #1E90FF;
   position: relative;
   color: white;
-  text-shadow: 2px 2px #2C3E50;
+  text-shadow: 0.5px 0.5px silver;
   height: 80px;
-  border: 1px solid #2C3E50;
+  border-bottom: 2px solid silver;
   /* border-radius: 5px; */
 }
 
 .app-title{
+  font-family: 'Molengo', Georgia, Times, serif;
+  line-height: 80px;
   position: relative;
-  font-style: oblique;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
 }
 
 .app-title.login-title{
-  color: #0867fb;
-  text-shadow: 2px 2px #BEBEBE;
+  color: #1E90FF;
+  text-shadow: 0.5px 0.5px silver;
   padding-bottom: 18px;
 }
 
@@ -416,7 +417,7 @@
 
 .login-form-title {
   display: block;
-  font-size: 35px;
+  font-size: 23px;
   color: #333333;
   line-height: 1.2;
   text-align: center;
@@ -600,8 +601,8 @@
 .profile-image{
   display: block;
   border-radius: 75px;
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   margin-top: 25px;
   margin-bottom: 10px;
   margin-left: 110px;
