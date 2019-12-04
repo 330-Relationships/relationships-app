@@ -26,7 +26,7 @@
     <main id="content">
       <div class="card text-left">
         <div class="card-header">
-          Step 1: Login Information
+          Step 1: Account Information
         </div>
         <div class="card-body text-primary">
             <div class="card-body">
@@ -40,7 +40,7 @@
                   <label for="inputLastName">Last Name*</label>
                   <input type="text" class="form-control" id="inputLast" placeholder="Last" aria-label="enter last name here" required>
               </div>
-              
+
               <div class="form-group">
                   <label for="inputPhone">Phone number*</label>
                   <input type="tel" class="form-control" id="inputTel" placeholder="Cell phone" aria-label="enter cell phone number here" required>
@@ -86,10 +86,10 @@
         <div class="card-body text-primary" id="contacts" aria-label="Contacts list">
             <div class="card-body">
               <button id="addContacts" type="button" class="btn btn-primary" data-toggle="modal" data-target="#newContactModal" aria-label="add contacts">
-                  <!-- <div id="personAdd"> -->
-                    <i  class="material-icons md-dark">person_add</i>
+                  <div class="text-center">
+                    <i  class="material-icons md-light">person_add</i>
                     <p class="button-label">Add Contacts</p>
-                  <!-- </div> -->
+                  </div>
               </button>
               <div id="contactList" style="display:none" aria-label="Imported contacts">
                 <table class="table table-sm text-left" id="contactListTable">
