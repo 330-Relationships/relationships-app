@@ -251,8 +251,8 @@
   padding-top: 0px;
 }
 .card-body.text-danger {
-  text-align: left;
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 .card-body.text-success {
   text-align: left;
@@ -270,6 +270,8 @@
 .left-person-info {
   position: relative;
   float: left;
+  margin-bottom: 10px;
+  width: 110px;
 }
 
 .right-message{
@@ -301,6 +303,9 @@
    background-color: #acc5ff !important;
  }
 
+.input-group.mb-3 {
+  width: 320px;
+}
 
  /*------------------------------------------------------------------
 [Calender]*/
